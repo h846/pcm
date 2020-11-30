@@ -1,29 +1,4 @@
-# new-pcm
+# PC Management System Project
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Summary
+With the retirement of IE, make change from the legacy system that relies on ActiveXObject to a system using Web APIs.
