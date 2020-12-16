@@ -1,6 +1,6 @@
 <template>
-  <v-card max-width="90%" class="mx-auto my-3">
-    <v-toolbar>
+  <v-card max-width="90%" class="mx-auto mt-10">
+    <v-toolbar class="blue-grey lighten-5">
       PC Management System
       <v-spacer></v-spacer>
       <v-text-field
@@ -21,11 +21,11 @@
       class="elevation-1"
     >
       <template v-slot:item.actions="{ item }">
-        <v-icon small class="mr-2" @click="showDetail(item)">mdi-pencil</v-icon>
+        <v-icon small class="mr-2" @click="showDetail(item)"
+          >mdi-format-list-bulleted</v-icon
+        >
         <v-icon small @click="deleteItem(item)"> mdi-delete </v-icon>
       </template>
-
-      <!-- <template v-slot:item.LoginTime="{ item }"> </template> -->
     </v-data-table>
     <!-- Deatail Dialog -->
     <v-dialog v-model="dialogDetail" max-width="500px">

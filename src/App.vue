@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-main>
+    <v-main class="bg">
       <router-view />
     </v-main>
   </v-app>
@@ -12,4 +12,8 @@ export default {
 };
 </script>
 <style scoped>
+.bg {
+  background: url("~@/assets/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
 </style>
