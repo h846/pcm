@@ -123,10 +123,13 @@ export default {
       this.item = Object.assign({}, item);
     },
     deleteItem: function (item) {
+      this.item = Object.assign({}, item);
+      console.log(item);
       this.dialogDelete = true;
     },
     delRecord: function () {
       let pcName = this.item["Computer_Name"];
+      console.log(pcName);
       axios
         .post("http://lejnet/API/accdb", {
           db: "ISNet/PCM/PCM.accdb",
